@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Gson gson = new Gson();
                 String userJson = gson.toJson(user);
 
+                // Выгрузка в JSON
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("userJson", userJson);
                 startActivity(intent);
